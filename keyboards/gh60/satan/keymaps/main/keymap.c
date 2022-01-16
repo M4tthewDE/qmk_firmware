@@ -2,6 +2,8 @@
 
 #include "keymap_german.h"
 
+#define BRIGHT_TOGGLE KC_MEDIA_REWIND
+
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
@@ -54,10 +56,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______,                            _______,                            _______, _______, _______, _______
   ),
     [_FL2] = LAYOUT_60_iso(
-    _______, PB_1, PB_2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______,   \
+    _______, KC_BRID, KC_BRIU, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______,   \
     _______, KC_7, KC_8, KC_9, _______, _______, _______, _______, _______, _______, _______, _______,  _______, \
     _______, KC_4, KC_5, KC_6, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
     _______, _______, KC_1, KC_2, KC_3, _______, _______, _______, _______, _______, _______, _______, _______, \
-    KC_MPLY, _______, KC_0,                           PROGRAMMABLE_BUTTON_3,                            _______, _______, _______, _______
+    KC_MPLY, _______, KC_0,                           BRIGHT_TOGGLE,                            _______, _______, _______, _______
   ),
 };
